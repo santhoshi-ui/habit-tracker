@@ -51,8 +51,13 @@ li {
   margin-bottom: 8px;
   text-align: left;
 }
-li span {
+.habit-name {
   flex: 1;
+}
+.streak {
+  font-size: 14px;
+  color: #d9480f;
+  font-weight: bold;
 }
 .done {
   text-decoration: line-through;
