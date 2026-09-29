@@ -19,7 +19,7 @@ h1 {
   color: #4a3f8f;
   margin-top: 0;
 }
-input {
+input[type="text"] {
   padding: 10px;
   border: 2px solid #ddd;
   border-radius: 10px;
@@ -35,4 +35,33 @@ button {
 }
 button:hover {
   background: #5b3a85;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f4f0ff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  text-align: left;
+}
+li span {
+  flex: 1;
+}
+.done {
+  text-decoration: line-through;
+  color: #999;
+}
+.delete {
+  background: #ff6b6b;
+  padding: 6px 10px;
+}
+.delete:hover {
+  background: #e05555;
 }
