@@ -10,7 +10,7 @@ A simple habit tracker that remembers your habits and counts your daily streaks.
 
 
 
-\## Features
+**Features**
 
 
 
@@ -24,7 +24,7 @@ A simple habit tracker that remembers your habits and counts your daily streaks.
 
 
 
-\## Built with
+**Built with**
 
 
 
@@ -36,7 +36,7 @@ A simple habit tracker that remembers your habits and counts your daily streaks.
 
 
 
-\## What I learned
+&#x20;**What I learned**
 
 
 
