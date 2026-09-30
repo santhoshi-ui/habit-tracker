@@ -8,6 +8,7 @@ body {
   font-family: Arial, sans-serif;
 }
 .card {
+  position: relative;
   background: white;
   padding: 30px;
   border-radius: 20px;
@@ -74,4 +75,39 @@ li {
   margin: 15px 0 0;
   font-weight: bold;
   color: #4a3f8f;
+}
+.theme-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: transparent;
+  font-size: 20px;
+  padding: 4px 8px;
+}
+.theme-btn:hover {
+  background: rgba(0, 0, 0, 0.08);
+}
+body.dark {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+}
+body.dark .card {
+  background: #22223b;
+  color: #f1f1f1;
+}
+body.dark h1 {
+  color: #b8a9ff;
+}
+body.dark .summary {
+  color: #b8a9ff;
+}
+body.dark li {
+  background: #2e2e4d;
+}
+body.dark input[type="text"] {
+  background: #2e2e4d;
+  color: white;
+  border-color: #444;
+}
+body.dark .done {
+  color: #888;
 }

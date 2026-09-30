@@ -2,6 +2,19 @@ const input = document.getElementById("habitInput");
 const button = document.getElementById("addBtn");
 const list = document.getElementById("habitList");
 const summary = document.getElementById("summary");
+const themeBtn = document.getElementById("themeBtn");
+
+if (localStorage.getItem("theme") === "dark") {
+  document.body.classList.add("dark");
+  themeBtn.textContent = "☀️";
+}
+
+themeBtn.addEventListener("click", function () {
+  document.body.classList.toggle("dark");
+  const isDark = document.body.classList.contains("dark");
+  localStorage.setItem("theme", isDark ? "dark" : "light");
+  themeBtn.textContent = isDark ? "☀️" : "🌙";
+});
 
 let habits = JSON.parse(localStorage.getItem("habits")) || [];
 
