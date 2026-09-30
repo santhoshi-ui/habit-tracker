@@ -1,4 +1,4 @@
-\# Habit Tracker
+#### Habit Tracker
 
 
 
@@ -6,7 +6,7 @@ A simple habit tracker that remembers your habits and counts your daily streaks.
 
 
 
-\*\*Live demo:\*\* https://santhoshi-ui.github.io/habit-tracker/
+Live demo: https://santhoshi-ui.github.io/habit-tracker/
 
 
 
