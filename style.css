@@ -70,3 +70,8 @@ li {
 .delete:hover {
   background: #e05555;
 }
+.summary {
+  margin: 15px 0 0;
+  font-weight: bold;
+  color: #4a3f8f;
+}

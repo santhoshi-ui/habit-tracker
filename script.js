@@ -1,6 +1,7 @@
 const input = document.getElementById("habitInput");
 const button = document.getElementById("addBtn");
 const list = document.getElementById("habitList");
+const summary = document.getElementById("summary");
 
 let habits = JSON.parse(localStorage.getItem("habits")) || [];
 
@@ -38,6 +39,18 @@ function getStreak(dates) {
 function render() {
   list.innerHTML = "";
   const today = dateKey(new Date());
+
+  const doneCount = habits.filter(function (habit) {
+    return habit.dates.includes(today);
+  }).length;
+
+  if (habits.length === 0) {
+    summary.textContent = "";
+  } else if (doneCount === habits.length) {
+    summary.textContent = "All done today! 🎉";
+  } else {
+    summary.textContent = "Done today: " + doneCount + " / " + habits.length;
+  }
 
   habits.forEach(function (habit, index) {
     const doneToday = habit.dates.includes(today);
