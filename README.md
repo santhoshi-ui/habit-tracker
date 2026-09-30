@@ -10,10 +10,6 @@ A simple habit tracker that remembers your habits and counts your daily streaks.
 
 
 
-!\[Habit Tracker screenshot](screenshot.png)
-
-
-
 \## Features
 
 
